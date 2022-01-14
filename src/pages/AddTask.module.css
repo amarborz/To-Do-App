@@ -1,0 +1,15 @@
+.width {
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+  .width {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2%;
+  }
+}
