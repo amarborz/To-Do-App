@@ -24,7 +24,7 @@ const AddTask = () => {
 
 		setWarning('')
 
-		fetch('https://to-do-app-81e16-default-rtdb.firebaseio.com/tasks.json', {
+		fetch('URL', {
 			method: 'POST',
 			body: JSON.stringify({
 				title: titleRef.current.value,
