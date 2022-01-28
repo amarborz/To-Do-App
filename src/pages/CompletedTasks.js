@@ -13,7 +13,7 @@ const CompletedTasks = () => {
 	useEffect(() => {
 		const fetchCompletedTasks = async () => {
 			const response = await fetch(
-				'https://to-do-app-81e16-default-rtdb.firebaseio.com/completed.json',
+				'URL/completed.json',
 			)
 
 			const responseData = await response.json()
@@ -41,7 +41,7 @@ const CompletedTasks = () => {
 		)
 
 		fetch(
-			`https://to-do-app-81e16-default-rtdb.firebaseio.com/completed/${event.target.id}.json`,
+			`URL/completed/${event.target.id}.json`,
 			{
 				method: 'DELETE',
 			},
