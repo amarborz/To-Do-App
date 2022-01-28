@@ -14,7 +14,7 @@ const AllTasks = (props) => {
 	useEffect(() => {
 		const fetchTasks = async () => {
 			const response = await fetch(
-				'https://to-do-app-81e16-default-rtdb.firebaseio.com/tasks.json',
+				'URL',
 			)
 			const responseData = await response.json()
 
@@ -39,7 +39,7 @@ const AllTasks = (props) => {
 		setTasks(tasks.filter((elem) => elem.id !== event.target.id))
 
 		fetch(
-			`https://to-do-app-81e16-default-rtdb.firebaseio.com/tasks/${event.target.id}.json`,
+			`URL/${event.target.id}.json`,
 			{
 				method: 'DELETE',
 			},
