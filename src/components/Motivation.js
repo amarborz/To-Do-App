@@ -11,7 +11,7 @@ const Motivation = () => {
 	const getQuoteHandler = async () => {
 		const number = Math.floor(Math.random() * 20)
 		const response = await fetch(
-			`https://to-do-app-81e16-default-rtdb.firebaseio.com/quotes/${number}.json`,
+			`URL/quotes/${number}.json`,
 		)
 		const responseData = await response.json()
 		setQuote(responseData)
